@@ -33,7 +33,7 @@ jobs:
         IMAGE_TAG: v1.1
       run: |
         #cd Chapter02/kubia/
-        #ls -ltra
+        
         # Docker build image database
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f Dockerfile_mysql .
         # Docker push image
